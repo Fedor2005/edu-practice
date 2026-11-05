@@ -14,7 +14,6 @@ ${CROSS_COMPILE}gcc -O2 -g -fno-stack-protector demos/alloc.c -o $ROOTFS_OVERLAY
 ${CROSS_COMPILE}gcc -O2 -g demos/qemu_first_task.c -o $ROOTFS_OVERLAY/opt/qemu_first_task
 ${CROSS_COMPILE}gcc -O2 -g demos/test.c -o $ROOTFS_OVERLAY/opt/test
 
-
 cp --preserve=mode demos/gdbs.sh $ROOTFS_OVERLAY/opt
 mkdir -p $ROOTFS_OVERLAY/etc/profile.d
 cp demos/overcommit.sh $ROOTFS_OVERLAY/etc/profile.d
